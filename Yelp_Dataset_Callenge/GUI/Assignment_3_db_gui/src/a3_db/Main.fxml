@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="652.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a3_db.MainController">
+   <children>
+      <HBox layoutX="10.0" layoutY="58.0" prefHeight="506.0" prefWidth="860.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="58.0">
+         <effect>
+            <Glow />
+         </effect>
+         <children>
+            <VBox prefHeight="506.0" prefWidth="121.0">
+               <children>
+                  <ListView fx:id="listView1" prefHeight="512.0" prefWidth="117.0">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ListView>
+               </children>
+            </VBox>
+            <VBox prefHeight="506.0" prefWidth="161.0">
+               <children>
+                  <ListView fx:id="listView2" prefHeight="508.0" prefWidth="157.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="506.0" prefWidth="150.0">
+               <children>
+                  <ListView fx:id="listView3" prefHeight="512.0" prefWidth="146.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="460.0" prefWidth="464.0">
+               <children>
+                  <TableView fx:id="tableView1" prefHeight="534.0" prefWidth="461.0">
+                    <columns>
+                        <TableColumn fx:id="table1ColumnSNO" prefWidth="40.0" text="#" />
+                        <TableColumn fx:id="table1ColumnName" prefWidth="225.0" text="B_NAME" />
+                        <TableColumn fx:id="table1ColumnCity" prefWidth="75.0" text="City" />
+                      <TableColumn fx:id="table1ColumnState" prefWidth="50.0" text="State" />
+                      <TableColumn fx:id="table1ColumnStars" prefWidth="50.0" text="Stars" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="9.0" layoutY="568.0" prefHeight="84.0" prefWidth="860.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="84.0" prefWidth="595.0">
+               <children>
+                  <ComboBox fx:id="comboBox1" prefHeight="37.0" prefWidth="150.0" />
+                  <VBox prefHeight="84.0" prefWidth="125.0">
+                     <children>
+                        <ComboBox fx:id="comboBox2" prefHeight="35.0" prefWidth="131.0" />
+                        <ComboBox fx:id="comboBox3" prefHeight="31.0" prefWidth="135.0" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ComboBox fx:id="comboBox4" prefHeight="33.0" prefWidth="150.0" />
+                        <ComboBox fx:id="comboBox5" prefHeight="31.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <ComboBox fx:id="comboBox6" prefHeight="35.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="84.0" prefWidth="287.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="41.0" prefWidth="126.0" text="SEARCH" />
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="41.0" prefWidth="126.0" text="CLOSE" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutY="-3.0" prefHeight="62.0" prefWidth="881.0">
+         <children>
+            <VBox id="mainLabelVbox" alignment="BOTTOM_RIGHT" prefHeight="62.0" prefWidth="892.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="37.0" prefWidth="99.0" style="-fx-border-color: lightgrey;" text="PAGE 1" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

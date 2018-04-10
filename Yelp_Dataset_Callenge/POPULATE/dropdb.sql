@@ -1,0 +1,11 @@
+drop table reviews;
+drop table check_in;
+drop table neighborhoods;
+drop table b_attributes;
+drop table b_main_category;
+drop table b_sub_category;
+drop table b_hours;
+drop table business;
+drop table elite_years;
+drop table friends;
+drop table yelp_user;
